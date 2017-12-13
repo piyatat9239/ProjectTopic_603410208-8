@@ -1,0 +1,11 @@
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\bin\Debug\TopicProject.exe.config
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\bin\Debug\TopicProject.exe
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\bin\Debug\TopicProject.pdb
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.Properties.Resources.resources
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.csproj.GenerateResource.Cache
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.exe
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.pdb
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.Form3.resources
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.food.resources
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.drink.resources
+c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.roomrate.resources
