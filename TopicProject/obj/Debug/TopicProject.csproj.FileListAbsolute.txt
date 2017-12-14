@@ -9,3 +9,4 @@ c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\ob
 c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.food.resources
 c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.drink.resources
 c:\users\acer\documents\visual studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.roomrate.resources
+C:\Users\Acer\Documents\Visual Studio 2017\Projects\TopicProject\TopicProject\obj\Debug\TopicProject.about.resources

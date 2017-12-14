@@ -12,6 +12,7 @@ namespace TopicProject
 {
     public partial class Form3 : Form
     {
+        bool c5 = true;
         public Form3()
         {
             InitializeComponent();
@@ -33,6 +34,11 @@ namespace TopicProject
         {
             roomrate room = new roomrate();
             room.Show();
+        }
+        private void aboutProgramToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            about about = new about();
+            about.Show();
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -157,7 +163,9 @@ namespace TopicProject
             }
             else
             {
+                
                label11.Text = room1.ToString();
+               
             }
         }
 
@@ -167,49 +175,58 @@ namespace TopicProject
             if (comboBox2.Text != "" || comboBox3.Text != "" || comboBox5.Text != "")
             {
 
+                int a = 0, b = 0, c = 0;
                 if (comboBox1.Text != "")
                 {
                     room = int.Parse(label11.Text);
                     int live1 = int.Parse(comboBox1.Text);
-                    room = room - live1;
-                    sum(room);
+                    a = live1;
                 }
 
                 if (comboBox4.Text != "")
                 {
                     room = int.Parse(label11.Text);
                     int live2 = int.Parse(comboBox4.Text);
-                    room = room - live2;
-                    sum(room);
+                    b = live2;
                 }
 
                 if (comboBox6.Text != "")
                 {
                     room = int.Parse(label11.Text);
                     int live3 = int.Parse(comboBox6.Text);
-                    room = room - live3;
-                    sum(room);
+                    c = live3;
                 }
-
                 int room2 = int.Parse(label11.Text);
+                room = room2 - (a + b + c);
                 if (room >= 0)
                 {
-                    int total_stand = int.Parse(label4.Text);
-                    int total_super = int.Parse(label8.Text);
-                    int total_delux = int.Parse(label9.Text);
-                    int btn_total;
-                    btn_total = total_stand + total_super + total_delux;
-                    MessageBox.Show("Total price : " + btn_total);
+                    
+                    if (room >= 0)
+                    {
+                        sum(room);
+                        int total_stand = int.Parse(label4.Text);
+                        int total_super = int.Parse(label8.Text);
+                        int total_delux = int.Parse(label9.Text);
+                        int btn_total;
+                        btn_total = total_stand + total_super + total_delux;
+                        if(btn_total != 0)
+                        MessageBox.Show("Total price : " + btn_total);
+                    }
+                    else
+                    {
+                        MessageBox.Show("กรุณากรอกข้อมูลให้ครบถ้วน", "แจ้งเตือน");
+                    }
                 }
-            }
-            else
-            {
-                MessageBox.Show("กรุณากรอกข้อมูลให้ครบถ้วน", "แจ้งเตือน");
-            }
-          
-            int amount_room = int.Parse(label11.Text);
+
+                else
+                {
+                    MessageBox.Show("ห้องไม่พอ");
+                }
+
+                int amount_room = int.Parse(label11.Text);
 
 
+            }
         }
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
@@ -257,5 +274,7 @@ namespace TopicProject
             comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox6.DropDownStyle = ComboBoxStyle.DropDownList;
         }
+
+
     }
 }
